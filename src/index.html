@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="//cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .titulo {
+            color: #222;
+        }
+
+        .lista-menu-opcoes {
+            scrollbar-width: none;
+        }
+
+        .lista-menu-opcoes::-webkit-scrollbar {
+            display: none;
+        }
+
+        .lista-menu-opcoes-after {
+            opacity: .6;
+            transition: opacity 150ms ease;
+        }
+
+        .lista-menu-opcoes-after:hover {
+            opacity: 1;
+        }
+
+        .lista-menu-opcoes-after::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #000;
+            opacity: 0;
+            height: 2px;
+            top: 58px;
+            left: 0;
+            right: 0;
+
+            transition: opacity 150ms ease;
+        }
+
+        .lista-menu-opcoes-after:hover::after {
+            opacity: .2;
+        }
+
+        .lista-menu-opcoes-after:has(input:checked) {
+            opacity: 1;
+        }
+
+        .lista-menu-opcoes-after:has(input:checked)::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-['Open_Sans'] text-xs">
+    <header class="bg-white pt-3 shadow-md fixed left-0 right-0">
+        <div class="flex flex-col gap-4">
+            <div class="px-6">
+                <button class="rounded-full w-full flex justify-between items-center border border-solid border-black border-opacity-5 py-2 px-2 shadow-md">
+                    <div class="flex items-center">
+                        <span class="pl-3 pr-5">
+                            <svg class="fill-black opacity-90" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M13 0c7.18 0 13 5.82 13 13 0 2.868-.929 5.519-2.502 7.669l7.916 7.917-2.828 2.828-7.917-7.916A12.942 12.942 0 0 1 13 26C5.82 26 0 20.18 0 13S5.82 0 13 0zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z" opacity=".8"></path></svg>
+                        </span>
+                        <div class="flex flex-col items-start text-xs">
+                            <span class="text-sm font-medium titulo">Anywhere</span>
+                            <span class="flex text-black text-opacity-60 font-light">Any week <span class="px-1.5 font-semibold">·</span> Add guests</span>
+                        </div>
+                    </div>
+                    <span class="border border-black border-opacity-10 rounded-full p-2.5">
+                        <svg class="fill-black opacity-90" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+                    </span>
+                </button>
+            </div>
+            <ul class="flex gap-8 px-6 font-medium overflow-x-auto lista-menu-opcoes">
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="cabins">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="">
+                        <span>Cabins</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="cabins" checked>
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="amazing views">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="">
+                        <span>Amazing views</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="amazing views">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="mansions">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="">
+                        <span>Mansions</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="mansions">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="castles">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="">
+                        <span>Castles</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="castles">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="omg">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="">
+                        <span>OMG!</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="omg">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="luxe">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt="">
+                        <span>Luxe</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="luxe">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="camping">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg" alt="">
+                        <span>Camping</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="camping">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="bed/breakfasts">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt="">
+                        <span>Bed & breakfasts</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="bed/breakfasts">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="vineyards">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/60ff02ae-d4a2-4d18-a120-0dd274a95925.jpg" alt="">
+                        <span>Vineyards</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="vineyards">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="tropical">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt="">
+                        <span>Tropical</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="tropical">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="artic">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg" alt="">
+                        <span>Artic</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="artic">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="earth homes">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg" alt="">
+                        <span>Earth homes</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="earth homes">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="aframes">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="">
+                        <span>A-frames</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="aframes">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="countryside">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="">
+                        <span>Countryside</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="countryside">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center pb-4 gap-1 cursor-pointer transition-transform active:scale-95" for="farms">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="">
+                        <span>Farms</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="farms">
+                </li>
+            </ul>
+        </div>
+    </header>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
