@@ -4,6 +4,9 @@
     user-select: none;
 }
 
+body {
+    height: 600vh;
+}
 
 .titulo {
     color: #222;
