@@ -22,7 +22,6 @@
                 }
                 else {
                     $topoLugares?.classList.add('md:shadow-none')
-                    console.log('LUCAS BALBINO')
                 }
             })
         }
