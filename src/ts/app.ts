@@ -12,9 +12,14 @@
         const $topoLugares:HTMLElement | null = document.querySelector('.js-topo-lugares')
         const $menuperfilOpcoes:HTMLElement | null = document.querySelector('.js-menu-pefil-opcoes')
         const $btnPerfilOpcoes:HTMLButtonElement | null = document.querySelector('.js-btn-perfil-opcoes')
+        const $listaMenuOpcoes:HTMLElement | null = document.querySelector('.js-lista-menu-opcoes')
+        const $setaVoltarTopo:HTMLElement | null = document.querySelector('.js-seta-voltar-topo')
+        const $setaAvancarTopo:HTMLElement | null = document.querySelector('.js-seta-avancar-topo')
+
 
         sombraAdicionar()
         perfilOpcoes()
+        lugaresPassar()
 
 
         // funcoes
@@ -47,6 +52,7 @@
             perfilOpcoesEsconder()
 
 
+            // funcoes internas
             function perfilOpcoesMostrar() {
                 $btnPerfilOpcoes?.addEventListener('click', () => {
                     $menuperfilOpcoes?.classList.toggle('hidden')
@@ -72,6 +78,31 @@
 
                     if ($menuperfilOpcoes?.classList.contains('hidden')) {
                         $btnPerfilOpcoes?.classList.remove('shadow-md')
+                    }
+                })
+            }
+        }
+
+        function lugaresPassar() {
+            avancar()
+            voltar()
+
+
+            // funcoes internas
+            function avancar() {
+                $setaAvancarTopo?.addEventListener('click', () => {
+
+                    if ($listaMenuOpcoes) {
+                        $listaMenuOpcoes.scrollBy(600, 0)
+                    }
+                })
+            }
+
+            function voltar() {
+                $setaVoltarTopo?.addEventListener('click', () => {
+
+                    if ($listaMenuOpcoes) {
+                        $listaMenuOpcoes.scrollBy(-600, 0)
                     }
                 })
             }

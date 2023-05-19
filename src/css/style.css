@@ -10,6 +10,7 @@
 
 .lista-menu-opcoes {
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 .lista-menu-opcoes::-webkit-scrollbar {
