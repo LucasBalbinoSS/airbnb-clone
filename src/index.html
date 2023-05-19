@@ -72,119 +72,238 @@
     </header>
     <main class="pt-0 h-full md:pt-20">
         <div class="sticky top-16 z-10 bg-white shadow-md md:px-10 md:flex md:justify-center md:gap-4 md:items-center md:shadow-none lg:px-20 js-topo-lugares">
-            <span class="hidden rounded-full p-2 border border-solid border-black border-opacity-10 cursor-pointer hover:shadow-md transition-shadow duration-300 md:block">
+            <span class="hidden rounded-full p-2 border border-solid border-black border-opacity-10 cursor-pointer hover:shadow-md transition-shadow duration-300 md:block js-seta-voltar-topo">
                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
                     <g fill="none"><path d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"></path></g>
                 </svg>
             </span>
-            <ul class="flex gap-8 px-6 font-medium overflow-x-auto md:px-0 md:max-w-7xl md:gap-10 lista-menu-opcoes">
+            <ul class="flex gap-8 px-6 font-medium overflow-x-auto md:px-0 md:max-w-7xl md:gap-10 lista-menu-opcoes js-lista-menu-opcoes">
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="cabins">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="Cabins">
                         <span>Cabins</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="cabins" checked>
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="amazing views">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="Amazing views">
                         <span>Amazing views</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="amazing views">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="mansions">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="Mansions">
                         <span>Mansions</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="mansions">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="castles">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="Castles">
                         <span>Castles</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="castles">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="omg">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="OMG!">
                         <span>OMG!</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="omg">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="luxe">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt="Luxe">
                         <span>Luxe</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="luxe">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="camping">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg" alt="Camping">
                         <span>Camping</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="camping">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="bed/breakfasts">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt="Bed and breakfasts">
                         <span>Bed & breakfasts</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="bed/breakfasts">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="vineyards">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/60ff02ae-d4a2-4d18-a120-0dd274a95925.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/60ff02ae-d4a2-4d18-a120-0dd274a95925.jpg" alt="Vineyards">
                         <span>Vineyards</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="vineyards">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="tropical">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt="Tropical">
                         <span>Tropical</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="tropical">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="artic">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg" alt="Artic">
                         <span>Artic</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="artic">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="earth homes">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg" alt="Earth homes">
                         <span>Earth homes</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="earth homes">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="aframes">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="A-frames">
                         <span>A-frames</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="aframes">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="countryside">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="Countryside">
                         <span>Countryside</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="countryside">
                 </li>
                 <li class="min-w-max relative lista-menu-opcoes-after">
                     <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="farms">
-                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="">
+                        <img class="vetor-lugar" height="24" width="24" src="//a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="Farms">
                         <span>Farms</span>
                     </label>
                     <input class="hidden" type="radio" name="lugares" id="farms">
                 </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="kitchens">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="Chef's kitchens">
+                        <span>Chef's kitchens</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="kitchens">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="skiing">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/c8bba3ed-34c0-464a-8e6e-27574d20e4d2.jpg" alt="Skiing">
+                        <span>Skiing</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="skiing">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="golfing">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg" alt="Golfing">
+                        <span>Golfing</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="golfing">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="creative">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/8a43b8c6-7eb4-421c-b3a9-1bd9fcb26622.jpg" alt="Creative spaces">
+                        <span>Creative spaces</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="creative">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="pianos">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/8eccb972-4bd6-43c5-ac83-27822c0d3dcd.jpg" alt="Grand pianos">
+                        <span>Grand pianos</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="pianos">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="desert">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg" alt="Desert">
+                        <span>Desert</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="desert">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="adapted">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/e22b0816-f0f3-42a0-a5db-e0f1fa93292b.jpg" alt="Adapted">
+                        <span>Adapted</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="adapted">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="ski">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg" alt="Ski-in/out">
+                        <span>Ski-in/out</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="ski">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="towers">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/d721318f-4752-417d-b4fa-77da3cbc3269.jpg" alt="Towers">
+                        <span>Towers</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="towers">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="windmills">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg" alt="Windmills">
+                        <span>Windmills</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="windmills">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="containers">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/0ff9740e-52a2-4cd5-ae5a-94e1bfb560d6.jpg" alt="Containers">
+                        <span>Containers</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="containers">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="treehouses">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt="Treehouses">
+                        <span>Treehouses</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="treehouses">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="trending">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt="Trending">
+                        <span>Trending</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="trending">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="yurts">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/4759a0a7-96a8-4dcd-9490-ed785af6df14.jpg" alt="Yurts">
+                        <span>Yurts</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="yurts">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="barns">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/f60700bc-8ab5-424c-912b-6ef17abc479a.jpg" alt="Barns">
+                        <span>Barns</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="barns">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="riads">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/7ff6e4a1-51b4-4671-bc9a-6f523f196c61.jpg" alt="Riads">
+                        <span>Riads</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="riads">
+                </li>
+                <li class="min-w-max relative lista-menu-opcoes-after">
+                    <label class="flex flex-col items-center py-4 gap-1 cursor-pointer transition-transform active:scale-95 md:gap-2 md:pt-8" for="dammusi">
+                        <img class="vetor-lugar" height="24" width="24" src="https://a0.muscache.com/pictures/c9157d0a-98fe-4516-af81-44022118fbc7.jpg" alt="Dammusi">
+                        <span>Dammusi</span>
+                    </label>
+                    <input class="hidden" type="radio" name="lugares" id="dammusi">
+                </li>
             </ul>
-            <span class="hidden rounded-full p-2 border border-solid border-black border-opacity-10 cursor-pointer hover:shadow-md transition-shadow duration-300 md:block">
+            <span class="hidden rounded-full p-2 border border-solid border-black border-opacity-10 cursor-pointer hover:shadow-md transition-shadow duration-300 md:block js-seta-avancar-topo">
                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
                     <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
                 </svg>
