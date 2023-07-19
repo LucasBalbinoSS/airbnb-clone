@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -48,6 +52,23 @@
 
 .lista-menu-opcoes-after:has(input:checked)::after {
     opacity: 1;
+}
+
+.rodape-input:checked + label:not(.rodape-vetor-search) svg {
+    opacity: 1;
+    color: #FF385C;
+}
+
+.rodape-input:checked + label:not(.rodape-vetor-search) span {
+    opacity: 1;
+}
+
+footer label svg {
+    opacity: 0.3;
+}
+
+footer label span {
+    opacity: 0.6;
 }
 
 
