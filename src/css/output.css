@@ -1178,10 +1178,6 @@ footer label span {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.active\:fill-\[\#FF385C\]:active {
-  fill: #FF385C;
-}
-
 .active\:text-\[\#FF385C\]:active {
   --tw-text-opacity: 1;
   color: rgb(255 56 92 / var(--tw-text-opacity));
